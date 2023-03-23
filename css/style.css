@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*#2C3333 #395B64 #E7F6F2 #A5C9CA
+font-family: 'Playball', cursive;
+font-family: 'Mulish', sans-serif;
+*/
+
+
+header{
+    background: #2c3333;
+    position: absolute;
+    width: 100%;
+    height: 140px;
+}
+
+
+.nombre h1{
+    display: block;
+    /*background-color: blue;*/
+    font-family: 'Playball', cursive;
+    font-size: 78px;
+    color: #E7F6F2;
+    text-transform: capitalize;
+
+
+   /* border-color: aquamarine;
+    border-style: groove;*/
+    padding-top: 25px;
+
+    padding-bottom: 25px;
+
+}
+
+
+.navbar{
+    list-style: none;
+    position: absolute;
+    left: 600px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+}
+
+/* fuente barra de navegacion box modeling*/
+.navbar li a{
+    font-family: 'Mulish', sans-serif ;
+    text-transform: capitalize;
+    color: #E7F6F2;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+  /* background-color: black;*/
+
+
+}
+
+
+
+
+/* logos resgistro y compra */
+.icons {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    padding-right: 5rem;
+    list-style: none;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+   
+}
+
+
+
+
+.fondo-main{
+    background-image: url(../assets/img/fondo-1920.jpg);
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size:cover;
+    background-size: cover;
+}
+
+
+
+.prendas{
+    list-style: none;
+    position: absolute;
+    top: 25rem;
+    left: 10rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.prendas li a{
+
+    margin: 3rem;
+    padding-top:110px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*background-color: beige;
+    border-color: aqua;
+    border-style:solid ;*/
+}
+
+
+
+/*logo whatsaap*/
+.wtsp{
+    position: fixed;
+    top: 35rem;
+    right: 10rem;
+    
+}
+
+
+footer{
+    width: 100%;
+    height: 140px;
+    background: #2C3333;
+}
+
+
+.con-nos{
+    list-style: none;
+    position: absolute;
+    padding-top: 40px ;
+    padding-left: 20px ;
+    display: block;
+    gap: 30px;
+
+
+
+}/****ancla-contacto-nosotros***/
+.con-nos li a{
+    font-family: 'Mulish', sans-serif;
+    text-decoration:none;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: #E7F6F2;
+    
+}
+
+
+.logo-ubc li a{
+    
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+.face-inst{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items:start;
+    padding-top: 0px;
+    padding-right: 5rem;
+    gap: 30px;
+    
+}
+
+/***nosotros***/
+ .container-titulo{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif; 
+    color: #E7F6F2;
+    text-transform: capitalize;
+    position:absolute;
+    top: 5rem;
+    left: 40rem;
+}
+ 
+ .contenedor{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E7F6F2;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:start;
+    gap: 1rem;
+ }
+
+ /***contactos***/
+.main-contacto{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    background-size: contain;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E7F6F2;
+    text-transform: capitalize;
+}
+.main-contacto p{
+    position: absolute ;
+    top: 10rem;
+}
+
+.icon-mail{
+    po
+}
