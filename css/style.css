@@ -8,7 +8,7 @@
 font-family: 'Playball', cursive;
 font-family: 'Mulish', sans-serif;
 */
-.reme200 img{display: none;}
+.reme200{display: none;}
 .icons-30px{display: none;}
 .logo-face30 {display: none;}
 .location-30{display: none;}
@@ -496,11 +496,27 @@ li a{
     
 
   }
+ 
   /*tienda*/
+
 .descripcion
 h2, h3, p{
     font-size: 16px;
     line-height: 25px;
+}
+
+.reme200{
+    display: flex;
+
+
+
+
+
+
+
+
+
+
 }
 
 }
