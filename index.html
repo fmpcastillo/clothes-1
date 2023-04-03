@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     
+
+
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
@@ -16,35 +19,38 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="nombre">
-            <h1>clothes</h1>
+    <header class="container-grid">
+    <div class="nombre">
+            <p>clothes</p>
         </div>
-        <div>
-            <nav> <!--barra de navegacion-->
-                <div>
-                  <ul class="navbar">
-                    <li><a href="./pages/galeria.html">nuevo</a></li>
-                    <li><a href="./pages/galeria.html">indumentaria</a></li>
-                    <li><a href="./pages/galeria.html">sale</a></li>
-                  </ul>
-                </div>
-                <div>
-                    <ul class="icons">
-                        <li><a href=""><img src="./assets/img/logo/registrarme.png" alt="registrate"></a></li>
-                        <li><a href=""><img src="./assets/img/logo/shopping-cart.png" alt="carrito-de-compra"></a></li> 
-                    </ul>
-                </div>
-            </nav>
+        <div class="navbar">
+                <ul class="menu">
+                  <li><a href="./pages/galeria.html">nuevo</a></li>
+                  <li><a href="./pages/galeria.html">indumentaria</a></li>
+                  <li><a href="./pages/tienda.html">sale</a></li>
+                </ul>
+              
         </div>
-     </header>
+        <div class="icons" >
+                <ul>
+                    <li><a href=""><img src="./assets/img/logo/registrarme.png" alt="registrate"></a></li>
+                    <li><a href=""><img src="./assets/img/logo/shopping-cart.png" alt="carrito-de-compra"></a></li> 
+                </ul>
+        </div>
+        <div class="contenedor-icon">
+            <ul class="icons-30px" >
+                <li><a href=""><img src="./assets/img/logos-30-px/Vector.png" alt="registrate"></a></li>
+                <li><a href=""><img src="./assets/img/logos-30-px/shopping-cart.png" alt="carrito-de-compra"></a></li> 
+            </ul>
+    </div>
 
-    <main>
+   </header>
+   <main>
         <section class="fondo-main">
             <!--selecion de prendas-->
            
                 <ul class="prendas">
-                    <li><a href=""><img src="./assets/img/prendas-acces/remeras.png" alt="remeras"></a></li>
+                    <li><a href="./pages/tienda.html"><img src="./assets/img/prendas-acces/remeras.png" alt="remeras"></a></li>
                     <li><a href=""><img src="./assets/img/prendas-acces/pantalones.png" alt="pantalones"></a></li>
                     <li><a href=""><img src="./assets/img/prendas-acces/camisas.png" alt="camisas"></a></li>
                     <li><a href=""><img src="./assets/img/prendas-acces/shorts.png" alt="shorts"></a></li>
@@ -57,23 +63,41 @@
         </div>
     </main>
 
-    <footer><!-- pie de pagina -->
-            <div>
-                <ul class="con-nos">
+    <footer ><!-- pie de pagina -->
+        <div class="contenedor-footer">
+            <div class="con-nos">
+                <ul >
                     <li><a href="./pages/contacto.html">contacto</a></li>
                     <li><a href="./pages/nosotros.html">nosotros</a></li>
                 </ul> 
-                    <div>
-                        <ul class="logo-ubc">
+            </div>
+                    <div class="logo-ubic">
+                        <ul>
                             <li><a href="https://goo.gl/maps/T9C5P5ir2fDLWXQv7" target="_blank"><img src="./assets/img/logo/location.png" alt="ubicacion"></a></li>
+                            <p>encontranos</p>
                         </ul>
                     </div>
-                </div>
-                <ul class="face-inst">
+                    <div class="logo-ubic-30">
+                        <ul class="location-30">
+                            <li><a href="https://goo.gl/maps/T9C5P5ir2fDLWXQv7" target="_blank"><img src="./assets/img/logos-30-px/location.png" alt="ubicacion"></a></li>
+                            <p>encontranos</p>
+                        </ul>
+                    </div>
+            <div class="face-inst">
+                <ul>
                     <li><a href="https://es-la.facebook.com/" target="_blank"><img src="./assets//img//logo/facebook.png" alt="facebook"></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/logo/instagram.png" alt="instagram"></a></li>
+                </ul>
+                  
+            </div>
+            <div class="face-inst30">
+                <ul class="logo-face30">
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><img src="./assets//img/logos-30-px/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/logos-30-px/instagram.png" alt="instagram"></a></li>
                 </ul>    
             </div>
+        </div>
     </footer>
+   
 </body>
 </html>

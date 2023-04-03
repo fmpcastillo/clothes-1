@@ -16,71 +16,100 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="container-grid">
         <div class="nombre">
-            <h1>clothes</h1>
+            <p><a href="../index.html">clothes</a></p>
         </div>
-        <div class="container-titulo">
-            <h2>contacto</h2>
+        <div class="navbar">
+                <ul class="menu">
+                  <li><a href="./pages/galeria.html">nuevo</a></li>
+                  <li><a href="./pages/galeria.html">indumentaria</a></li>
+                  <li><a href="./pages/tienda.html">sale</a></li>
+                </ul>
+              
         </div>
-        <div>
-            <ul class="icons">
-                <li><a href=""><img src="../assets/img/logo/registrarme.png" alt="registrarme"></a></li>
-                <li><a href=""><img src="../assets/img/logo/shopping-cart.png" alt="carrito-de-compra"></a></li>
+        <div class="icons" >
+                <ul>
+                    <li><a href=""><img src="../assets/img/logo/registrarme.png" alt="registrate"></a></li>
+                    <li><a href=""><img src="../assets/img/logo/shopping-cart.png" alt="carrito-de-compra"></a></li> 
+                </ul>
+        </div>
+        <div class="contenedor-icon">
+            <ul class="icons-30px" >
+                <li><a href=""><img src="./assets/img/logos-30-px/Vector.png" alt="registrate"></a></li>
+                <li><a href=""><img src="./assets/img/logos-30-px/shopping-cart.png" alt="carrito-de-compra"></a></li> 
             </ul>
-        </div>
-    </header>
+    </div>
+
+   </header>
     <main>
         <div class="main-contacto">
             <p>Encontranos en Whatsapps 603 555-0123 (solo mensajes)</p>
         </div>
         <div class="icon-mail">
-            <a href=""><img src="../assets/img/logo/mail.png" alt="mail">michael.mitc@example.com</a>
+            <a href=""><img src="../assets/img/logo/mail.png" alt="mail"></a>
+            <p>michael.mitc@example.com</p>
         </div>
         <div>
             <form action="" method="">
-                <fieldset>
-                    <legend>datos</legend>
-                    <label for="nombre">
-                        <span>Nombre:</span>
+                <fieldset class="container-form">
+                    
+                    <label class="intro-nombre" for="nombre" >
+                        <span>nombre:</span>
                         <input type="text" id="nombre" placeholder=" Nombre y Apellido">
                     </label>
-                    <label for="telefono">
-                        <span>Telefono:</span>
+                    <label for="telefono" class="intro-telefono">
+                        <span>telefono:</span>
                         <input type="text" id="telefono" placeholder="">
                     </label>
-                    <label for="mail">
-                        <span>Mail:</span>
+                    <label class="intro-mail" for="mail">
+                        <span>mail:</span>
                         <input type="text" id="mail" placeholder="mail@example.com">
                     </label>
-                    <label for="mensajes">
-                        <span>Mensajes:</span>
+                    <label class="intro-mensaje" for="mensajes">
+                        <span>mensajes:</span>
                         <input type="text" id="mensajes" placeholder="Deja tu mensaje">
                     </label>
                 </fieldset>
-                <input type="submit">
+                <input class="boton-enviar" type="submit">
             </form>
         </div>
 
         </main>
     <footer>
-        <div>
-            <div>
-                <ul class="con-nos">
+        <div class="contenedor-footer">
+            <div class="con-nos">
+                <ul >
                     <li><a href="./pages/contacto.html">contacto</a></li>
                     <li><a href="./pages/nosotros.html">nosotros</a></li>
                 </ul> 
-                    <div>
-                        <ul class="logo-ubc">
-                            <li><a href="https://goo.gl/maps/T9C5P5ir2fDLWXQv7" target="_blank"><img src="../assets/img/logo/location.png" alt="ubicacion"></a></li>
+            </div>
+                    <div class="logo-ubic">
+                        <ul>
+                            <li><a href="https://goo.gl/maps/T9C5P5ir2fDLWXQv7" target="_blank"><img src="./assets/img/logo/location.png" alt="ubicacion"></a></li>
+                            <p>encontranos</p>
                         </ul>
                     </div>
-                </div>
-                <ul class="face-inst">
+                    <div class="logo-ubic-30">
+                        <ul class="location-30">
+                            <li><a href="https://goo.gl/maps/T9C5P5ir2fDLWXQv7" target="_blank"><img src="./assets/img/logos-30-px/location.png" alt="ubicacion"></a></li>
+                            <p>encontranos</p>
+                        </ul>
+                    </div>
+            <div class="face-inst">
+                <ul>
                     <li><a href="https://es-la.facebook.com/" target="_blank"><img src="../assets//img//logo/facebook.png" alt="facebook"></a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logo/instagram.png" alt="instagram"></a></li>
+                </ul>
+                  
+            </div>
+            <div class="face-inst30">
+                <ul class="logo-face30">
+                    <li><a href="https://es-la.facebook.com/" target="_blank"><img src="./assets//img/logos-30-px/facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/logos-30-px/instagram.png" alt="instagram"></a></li>
                 </ul>    
             </div>
+        </div>
     </footer>
 </body>
 </html>

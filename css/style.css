@@ -8,116 +8,92 @@
 font-family: 'Playball', cursive;
 font-family: 'Mulish', sans-serif;
 */
-
-
+.reme200 img{display: none;}
+.icons-30px{display: none;}
+.logo-face30 {display: none;}
+.location-30{display: none;}
 header{
-    background: #2c3333;
-    position: absolute;
     width: 100%;
-    height: 140px;
+    height: 120px;
+    background-color:#2C3333 ;   
+}
+main{
+    width: 100%;
+    height: 600px;
 }
 
-
-.nombre h1{
-    display: block;
-    /*background-color: blue;*/
-    font-family: 'Playball', cursive;
-    font-size: 78px;
-    color: #E7F6F2;
-    text-transform: capitalize;
-
-
-   /* border-color: aquamarine;
-    border-style: groove;*/
-    padding-top: 25px;
-
-    padding-bottom: 25px;
-
+.container-grid{
+  
+    display: grid;
+    grid-template-columns: 35% 30% 35%;
+     grid-template-areas: 
+    "nombre navbar icons"
+    ;
 }
-
-
-.navbar{
-    list-style: none;
-    position: absolute;
-    left: 600px;
-    bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    
-    
-
+.nombre{
+    grid-area: nombre;
+    color:#A5C9CA ;
 }
+.navbar {
 
-/* fuente barra de navegacion box modeling*/
-.navbar li a{
-    font-family: 'Mulish', sans-serif ;
-    text-transform: capitalize;
-    color: #E7F6F2;
-    text-decoration: none;
-    font-size: 24px;
-    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  /* background-color: black;*/
-
-
+    grid-area: navbar;
 }
-
-
-
-
-/* logos resgistro y compra */
 .icons {
-    position: absolute;
-    bottom: 30px;
-    right: 0px;
-    padding-right: 5rem;
-    list-style: none;
+    grid-area: icons;
 
 }
-
-.icons{
+.icons ul{
     display: flex;
     flex-direction: row;
     gap: 30px;
-   
 }
 
-
-
-
-.fondo-main{
-    background-image: url(../assets/img/fondo-1920.jpg);
-    width: 100%;
-    height: 700px;
-    background-position: center;
-    background-size:cover;
-    background-size: cover;
+.nombre, .navbar, .icons{
+    display: flex;
+   align-items: end;
+   justify-content: center;
+   gap: 20px;
+}
+.nombre p{
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+    font-size: 72px;
 }
 
-
-
-.prendas{
-    list-style: none;
-    position: absolute;
-    top: 25rem;
-    left: 10rem;
+.navbar ul{
     display: flex;
     flex-direction: row;
+    gap:20px;   
+ }
+.navbar li 
+{   text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    text-transform: capitalize;
+    color: #A5C9CA;
+    font-size: 24px;
+    
 }
+li{list-style: none;}
 
-.prendas li a{
 
-    margin: 3rem;
-    padding-top:110px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    /*background-color: beige;
-    border-color: aqua;
-    border-style:solid ;*/
+/************main*************/
+
+.fondo-main{
+    width: 100%;
+    height: 600px;
+    background-image: url(../assets/img/fondo-1920.jpg);
+    background-size: cover;
+    background-position: center;
 }
+.prendas {
+    display: flex; 
+    flex-direction: row;   
+    justify-content:space-evenly;
+    position: relative;
+    top:17rem;
 
-
-
+    
+}
 /*logo whatsaap*/
 .wtsp{
     position: fixed;
@@ -125,56 +101,121 @@ header{
     right: 10rem;
     
 }
-
+/*********footer*******/
 
 footer{
     width: 100%;
-    height: 140px;
-    background: #2C3333;
+    height: 120px;
+    background-color: #2C3333;
+    
 }
-
-
-.con-nos{
-    list-style: none;
-    position: absolute;
-    padding-top: 40px ;
-    padding-left: 20px ;
-    display: block;
-    gap: 30px;
-
-
-
-}/****ancla-contacto-nosotros***/
-.con-nos li a{
-    font-family: 'Mulish', sans-serif;
-    text-decoration:none;
+p{font-size: 20px;
     text-transform: capitalize;
-    font-size: 24px;
-    color: #E7F6F2;
-    
+    text-decoration: none;
+    list-style: none; 
+    font-family: 'Mulish', sans-serif;
+    color: #E7F6F2;}
+li a{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none; 
+    font-family: 'Mulish', sans-serif;
+    color: #E7F6F2;}
+.contenedor-footer{
+    display: grid;
+    grid-template-columns: 35% 30% 35% ;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "con-nos logo-ubic face-inst"
+    ;
+    }
+.con-nos{
+   grid-area:con-nos;
+   justify-self: center;
+   align-self: center;
+}
+.logo-ubic{
+    grid-area: logo-ubic;
+}
+.logo-ubic li{
+    display: flex;
+   
+    justify-content: center;
 }
 
+.logo-ubic  p{
+    display: flex;
 
-.logo-ubc li a{
+    justify-content: center;
     
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
-
-
 
 .face-inst{
-    list-style: none;
-    display:flex;
+    grid-area: face-inst;
+    justify-self: center;
+    align-self:center;
+
+}
+.face-inst ul{
+    display: flex;
     flex-direction: row;
-    justify-content: right;
-    align-items:start;
-    padding-top: 0px;
-    padding-right: 5rem;
     gap: 30px;
+}
+
+/*******tienda*******/
+.main-tienda{
+    width: 100%;
+    height: 600px;
+    background-color:#E7F6F2 ;
+    background-size: cover;
+}
+
+.nombre a{
+    text-decoration: none;
+    font-family: 'Playball', cursive;
+    text-transform: capitalize;
+    color: #E7F6F2 ;
+    font-size:72px;     
+}
+
+
+.grilla-remes{
+    display: grid;
+    grid-template-columns:30% 40% 30%;
+    grid-template-rows: 590px;
+    grid-template-areas:
+    "seleccion reme descripcion";
     
 }
+.seleccion{
+    grid-area: seleccion;
+   align-self: center;
+   justify-self: center;
+}
+.reme{
+    grid-area:reme;
+    align-self: center;   
+
+}
+.descripcion{
+    
+    grid-area: descripcion;
+    align-self: center;
+    line-height: 40px;
+}
+.descripcion p, h2, h3{
+     color: black;
+     text-transform: capitalize;
+     font-family: 'Mulish', sans-serif;
+    
+    
+}
+    
+
+/*****galeria*****/
+
+
 
 /***nosotros***/
  .container-titulo{
@@ -205,7 +246,8 @@ footer{
  }
 
  /***contactos***/
-.main-contacto{
+
+ .main-contacto{
     width: 100%;
     height: 700px;
     background-color: black;
@@ -213,12 +255,321 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     color: #E7F6F2;
     text-transform: capitalize;
+
+}
+.icon-mail{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif ;
+    position:absolute;
+    top: 13rem;
+    left: 2rem;
+
+}
+.icon-mail p{
+    
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif ;
+    position:absolute;
+    color: #E7F6F2;
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
 }
 .main-contacto p{
     position: absolute ;
     top: 10rem;
 }
+.contenedor-label{
+    
+}
 
-.icon-mail{
-    po
+.container-form{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    align-items: end;
+    
+    background-color: aqua;
+   
+   
+}
+
+.intro-nombre{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #E7F6F2;
+    position: absolute;
+    top: 10rem;
+    right: 16rem;
+  
+}
+.intro-nombre input{  
+    display:flex;
+    flex-direction: column;
+    }
+
+.intro-mail{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #E7F6F2;
+    position: absolute;
+    top: 14rem;
+    right: 16rem;
+}
+.intro-mail input{  
+    display:flex;
+    flex-direction: column;
+    }
+
+
+.intro-telefono{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #E7F6F2;
+    position: absolute;
+    top: 18rem;
+    right: 16rem;
+
+
+}
+.intro-telefono input{  
+    display:flex;
+    flex-direction: column;
+    }
+
+
+.intro-mensaje{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #E7F6F2;
+    text-transform: capitalize;
+    font-size: 24px;
+    position: absolute;
+    top: 22rem;
+    right: 16rem;
+}
+.intro-mensaje input{  
+    display:flex;
+    flex-direction: column;
+    }
+
+.boton-enviar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 30rem;
+    right: 15rem;}
+/*nosotros*/
+.container-titulo {
+   
+    position:absolute;
+    top: 4rem;
+    left: 20rem;
+    font-family: 'Mulish', sans-serif;
+    list-style: none;
+    font-size: 32px;
+    color: #E7F6F2;
+    text-transform: capitalize;
+}
+
+.background-nosotros{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-size: contain;
+
+}
+ .contenedor{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#E7F6F2;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+    padding-bottom: 100px;
+    
+
+
+
+ }
+ h3{
+    color:#E7F6F2;
+ }
+
+@media(max-width: 1024px){
+/*index*/
+.wtsp{
+    top:30rem;
+}
+
+
+}
+
+@media(max-width: 768px){
+/*tienda*/
+.descripcion p, h2, h3{
+    font-size:16px;
+}
+.descripcion{
+    padding-right: 40px;
+
+}
+
+.reme{
+    display: none;}
+
+}
+
+.reme200{
+    display: flex;
+    flex-direction :row;
+    align-items: center;
+}
+
+
+@media(max-width:576px)
+{/*index*/
+    .wtsp{display: none;}
+    .logo-ubic{display: none;}
+    .prendas
+    {
+    display: none;
+    }
+    .nombre{position: absolute;
+    top:20px;
+    left: 210px;
+    
+    }
+    .nombre p{
+        font-size: 52px;
+    }
+    .navbar{
+        position: absolute;
+        left: 40px;
+        top: 80px;
+    }
+    .icons{display: none;}
+    .contenedor-icon{
+        position: absolute;
+        top: 85px;
+        right: 60px;
+    }
+    .icons-30px{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    
+    }
+    .logo-ubic-30{
+        position: absolute;
+        top: 725px;
+        left: 240px;
+
+    }
+    .location-30{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+      
+    }
+  .face-inst{display: none;}
+ 
+  .face-inst30{ 
+    position: absolute;
+    right: 40px;;
+
+  }
+  .logo-face30{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+
+  }
+  /*tienda*/
+.descripcion
+h2, h3, p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+}
+    
+
+@media(max-width:320px){
+    main{
+        background-position:center;
+        background-size: contain;
+}
+p{
+    font-size: 16px;
+}
+.nombre{
+position: absolute;
+left: 90px;
+}
+.nombre a{
+    font-size: 52px;
+
+}
+.menu a{
+    font-size: 16px;
+    
+}
+.navbar{
+    position: absolute;
+    left: 20px;
+    top: 90px;
+}
+
+.navbar ul{
+    gap: 10px;
+}
+.contenedor-icon{
+    position: absolute;
+    right: 20px;
+}
+.wtsp{
+    display: none;
+}
+.con-nos a{
+    font-size: 16px;
+}
+
+.logo-ubic-30{
+    position: absolute;
+    left:120px  ;
+}
+.seleccion{
+    display: none;
+}
+.agregar, .desc, .env{
+    display: none;
+}
+.reme200{
+    position: absolute;
+    left:65px;
+    padding-top: 50px;
+
+}
+.descripcion{
+    position: absolute;
+    top: 550px;
+    left: 40px;
+    
+}
+.descripcion p{
+    line-height: 16px;
+
+}
 }
