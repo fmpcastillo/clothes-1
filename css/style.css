@@ -8,10 +8,11 @@
 font-family: 'Playball', cursive;
 font-family: 'Mulish', sans-serif;
 */
-.reme200{display: none;}
+
 .icons-30px{display: none;}
 .logo-face30 {display: none;}
 .location-30{display: none;}
+.reme-200{display: none;}
 header{
     width: 100%;
     height: 120px;
@@ -20,6 +21,7 @@ header{
 main{
     width: 100%;
     height: 600px;
+    
 }
 
 .container-grid{
@@ -163,6 +165,7 @@ li a{
     gap: 30px;
 }
 
+
 /*******tienda*******/
 .main-tienda{
     width: 100%;
@@ -278,9 +281,6 @@ li a{
 .main-contacto p{
     position: absolute ;
     top: 10rem;
-}
-.contenedor-label{
-    
 }
 
 .container-form{
@@ -406,15 +406,14 @@ li a{
     color:#E7F6F2;
  }
 
-@media(max-width: 1024px){
-/*index*/
+@media(max-width: 1024px)
+{
 .wtsp{
     top:30rem;
 }
 
 
 }
-
 @media(max-width: 768px){
 /*tienda*/
 .descripcion p, h2, h3{
@@ -426,31 +425,38 @@ li a{
 }
 
 .reme{
-    display: none;}
-
+    display: none;
 }
-
-.reme200{
-    display: flex;
-    flex-direction :row;
-    align-items: center;
+.contenedor200px{
+    position: absolute;
+    padding-top: 140px;
+    padding-left: 260px;
+    
 }
-
+.reme-200{
+    display:block;
+    
+}
+}
 
 @media(max-width:576px)
-{/*index*/
-    .wtsp{display: none;}
-    .logo-ubic{display: none;}
-    .prendas
+{
+    .wtsp{
+        display: none;
+    }
+    .logo-ubic{
+        display: none;
+    }
+    .prendas{
+        display: none;
+    }
+    .nombre{
+        position: absolute;
+        top:20px;
+        left: 210px;
+    }
+    .nombre p
     {
-    display: none;
-    }
-    .nombre{position: absolute;
-    top:20px;
-    left: 210px;
-    
-    }
-    .nombre p{
         font-size: 52px;
     }
     .navbar{
@@ -458,7 +464,9 @@ li a{
         left: 40px;
         top: 80px;
     }
-    .icons{display: none;}
+    .icons{
+        display: none;
+    }
     .contenedor-icon{
         position: absolute;
         top: 85px;
@@ -482,110 +490,107 @@ li a{
        align-items: center;
       
     }
-  .face-inst{display: none;}
+    .face-inst{
+        display: none;}
  
-  .face-inst30{ 
+    .face-inst30{ 
     position: absolute;
     right: 40px;;
-
-  }
+    }
   .logo-face30{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    
-
-  }
+    }
  
   /*tienda*/
 
-.descripcion
-h2, h3, p{
-    font-size: 16px;
-    line-height: 25px;
+    .descripcion h2, h3, p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .contenedor200px{
+        position: absolute;
+        top:90px;
+        right: 210px;
+        
+        
+    }
+    .reme-200{
+        display:block;
+        
+    }
+
+   
+  
 }
 
-.reme200{
-    display: flex;
 
-
-
-
-
-
-
-
-
-
-}
-
-}
-    
 
 @media(max-width:320px){
+
     main{
         background-position:center;
         background-size: contain;
-}
-p{
-    font-size: 16px;
-}
-.nombre{
-position: absolute;
-left: 90px;
-}
-.nombre a{
-    font-size: 52px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .nombre{
+        position: absolute;
+        left: 90px;
+        }
+    .nombre a{
+        font-size: 52px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .navbar{
+        position: absolute;
+        left: 20px;
+        top: 90px;
+    }
 
-}
-.menu a{
-    font-size: 16px;
+    .navbar ul{
+        gap: 10px;
+    }
+    .contenedor-icon{
+        position: absolute;
+        right: 20px;
+    }
+    .wtsp{
+        display: none;
+    }
+    .con-nos a{
+        font-size: 16px;
+    }
+    .logo-ubic-30{
+        position: absolute;
+        left:120px  ;
+    }
+    .seleccion{
+        display: none;
+    }
+    .agregar, .desc, .env{
+        display: none;
+    }
+    .contenedor200px{
+        position: absolute;
+        top:20px;
+        right: 65px;
     
-}
-.navbar{
-    position: absolute;
-    left: 20px;
-    top: 90px;
-}
+    }   
+    .reme200{
+        display: block;
 
-.navbar ul{
-    gap: 10px;
-}
-.contenedor-icon{
-    position: absolute;
-    right: 20px;
-}
-.wtsp{
-    display: none;
-}
-.con-nos a{
-    font-size: 16px;
-}
-
-.logo-ubic-30{
-    position: absolute;
-    left:120px  ;
-}
-.seleccion{
-    display: none;
-}
-.agregar, .desc, .env{
-    display: none;
-}
-.reme200{
-    position: absolute;
-    left:65px;
-    padding-top: 50px;
-
-}
-.descripcion{
-    position: absolute;
-    top: 550px;
-    left: 40px;
-    
-}
-.descripcion p{
-    line-height: 16px;
-
-}
+    }
+    .descripcion{
+        position: absolute;
+        top: 550px;
+        left: 40px;
+    }
+    .descripcion p{
+        line-height: 16px;
+    }
 }
