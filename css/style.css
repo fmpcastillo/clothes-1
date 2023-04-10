@@ -461,6 +461,7 @@ padding-left: 30px;
 
 
 @media (min-width: 576px)  and (max-width:659px){
+  
     .wtsp {
         display: none;
     }
@@ -673,9 +674,9 @@ padding-left: 30px;
 
 
 @media  (min-width:340px) and (max-width:399px) {
-    .nombre {
+    .nombre p{
         position: absolute;
-        top: 0px;
+        top: 30px;
         left: 130px;
     }
     .nombre p {
@@ -688,7 +689,7 @@ padding-left: 30px;
     .navbar{
         position: absolute;
         left: 25px;
-        top: 80px;
+        top: 86px;
     }
     .icons {
         display: none;
@@ -802,9 +803,9 @@ padding-left: 30px;
 
 
 @media (min-width:320px) and (max-width:341px) {
-    .nombre {
+    .nombre  p{
         position: absolute;
-        top: 0px;
+        top: 30px;
         left: 100px;
     }
     .nombre p {
