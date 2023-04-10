@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-
-
 /*#2C3333 #395B64 #E7F6F2 #A5C9CA  "font-family: 'Playball', cursive;"  "font-family: 'Mulish', sans-serif;" */
 .reme-200 {display: none;}
 header {
     width: 100%;
     height: 120px;
     background-color:#2C3333 ;
-}
+    }
 
 main {
     width: 100%;
@@ -188,6 +186,13 @@ padding-left: 30px;
     grid-area: seleccion;
     align-self: center;
     justify-self: center;
+
+
+}
+.seleccion img {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .reme {
@@ -198,7 +203,7 @@ padding-left: 30px;
 .descripcion {
     grid-area: descripcion;
     align-self: center;
-    line-height: 40px;
+    line-height: 25px;
 }
 
 .descripcion p, h2, h3 {
@@ -212,7 +217,7 @@ padding-left: 30px;
 
 
 
-/***nosotros***/
+                                                        /***nosotros***/
 .container-titulo {
     list-style: none;
     font-size: 20px;
@@ -393,36 +398,36 @@ padding-left: 30px;
 
 
 
+
 @media (max-width: 1024px) {
     .wtsp {
         top:30rem;
-}
+    }
 }
 
 
 @media (max-width: 768px) {
     .descripcion p, h2, h3 {
         font-size: 16px;
-}
+    }
 
-    .descripcio {
-        padding-right: 40px;
-}
+    
     .reme { 
         display: none;
-}
+    }
     .contenedor200px {
         position: absolute;
         padding-top: 140px;
-        padding-left: 260px;
-}
+        padding-left: 240px;
+    }
     .reme-200 {
         display: block;
-}
+    }
+    
 }
 
 
-@media(max-width: 767px) and (min-width: 660px) {
+@media (min-width: 660px) and (max-width: 767px) {
     .prendas {
         display: grid;
         grid-template-rows: repeat(2,1fr);
@@ -431,79 +436,78 @@ padding-left: 30px;
         "item-3 item-4"
         "item-5 ..";
         gap: 30px;
-}
+    }   
     .item-1 {
         grid-area: item-1;
-}
+    }
     .item-2 {
         grid-area: item-2;
-}
+    }
     .item-3 {
         grid-area: item-3;
-}
+    }
     .item-4 {
         grid-area: item-4;
-}
+    }
     .prendas {
         position: relative;
         top: 7rem;
-}
+    }   
     .wtsp {
     display: none;
+    }
 }
-}
 
 
 
-@media (max-width:659px) and (min-width: 576px) {
+@media (min-width: 576px)  and (max-width:659px){
     .wtsp {
         display: none;
-}
+    }
     .logo-ubic {
         display: none;
-}
+    }   
     .prendas {
         display: grid;
-
         grid-template-rows: repeat(2,1fr);
         grid-template-areas: 
         "item-1 item-2"
         "item-3 item-4"
         "item-5 ..";
         gap: 30px;
-}
+    }
     .item-1 {
         grid-area: item-1;
-}
+    }
     .item-2 {
         grid-area: item-2;
-}
+    }
     .item-3 {
         grid-area: item-3;
-}
+    }
     .item-4 {
         grid-area: item-4;
-}
+    }
     .item-5 {
         grid-area: item-5;
-}
+    }   
     .prendas {
         position: relative;
         top: 7rem;
-}
+    }
     .nombre {
         position: absolute;
         top:20px;
         left: 210px;
-}
+    }
     .nombre p {
         font-size: 52px;
-}
+    }
     .navbar {
         position: absolute;
         left: 40px;
         top: 80px;
-}
+    }
     .icons {
         display: none;
     }
@@ -511,8 +515,7 @@ padding-left: 30px;
         position: absolute;
         top: 85px;
         right: 60px;
-}
-    
+    }
     .icons-30px {
         display: flex;
         flex-direction: row;
@@ -523,77 +526,70 @@ padding-left: 30px;
        flex-direction: column;
        flex-wrap: wrap;
        align-items: center;
-}
+    }
     .con-nos li a {
        font-size:16px ; 
-}
+    }
     .face-inst {
         display: none;
-}
+    }
  
    .face-inst30 { 
         display: inline;
         position: absolute;
         right:40px;
-}
+    }
     .logo-face30 {
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
+    }
  
   /*tienda*/
 
     .descripcion h2, h3, p {
         font-size: 16px;
         line-height: 25px;
-}
-
-    .contenedor200px {
-        position: absolute;
-        top:90px;
-        right: 210px;
-}
-    .reme-200 {
-        display:block;
-}
+    }
 }
 
 
 
-@media (max-width:575px) and (min-width:400px) {
+
+
+@media (min-width:400px) and (max-width:575px)  {
     .nombre {
         position: absolute;
         top:2px;
         left: 155px;
-}
+    }
 
     .nombre p {
         font-size: 52px;
-}
+    }
     .navbar {
         position: absolute;
         left: 25px;
         top: 80px;
-}
+    }
     .wtsp{
         display: none;
     }
     .icons {
         display: none;
-}
+    }
     .contenedor-icon {
         position: absolute;
         top: 85px;
         right: 35px;
-}
+    }
     .icons-30px {
         display: flex;
         flex-direction: row;
         gap: 20px;
     
-}
-    .prendas {
+    }
+    .prendas { /*index*/
         display: grid;
         grid-template-rows: repeat(2,1fr);
         grid-template-areas: 
@@ -601,44 +597,41 @@ padding-left: 30px;
         "item-3 item-4"
         "item-5 ..";
         gap: 30px;
-}
+    }
     .item-1 {
         grid-area: item-1;
-}
+    }
     .item-2 {
         grid-area: item-2;
-}
+    }
     .item-3 {
         grid-area: item-3;
-}
+    }
     .item-4 {
         grid-area: item-4;
-}
+    }
     .item-5 {
         grid-area: item-5;
-}
-
+    }
     .prendas {
         position: relative;
         top: 7rem;
-}
-
+    }
     .con-nos li a {
         font-size:16px ; 
- }
-    .logo-ubic {
+    }
+    .logo-ubic {                /*logos footer*/
         display: none;
-}
+    }
     .logo-ubic-30 { 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}
+    }
     .logo-ubic-30 p {
         font-size: 16px;
-
-}
+    }
     .face-inst {
         display: none;
     }
@@ -646,53 +639,74 @@ padding-left: 30px;
         display: inline;
         position: absolute;
         right:40px;
-}
+    }
     .logo-face30 {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    }
+
+    /*tienda*/
+    .contenedor200px {
+    position: absolute;
+    top: 70px;
+    right: 125px;
+    }
+
+    .seleccion {
+        display: none;
+    }
+
+    .descripcion {
+    position: absolute;
+    top: 550px;
+    left: 40px;
+    }
+    .descripcion p {
+    line-height: 16px;
+    }
+    
 }
-}
 
 
 
 
 
-@media (max-width:399px) and (min-width:340px) {
+@media  (min-width:340px) and (max-width:399px) {
     .nombre {
         position: absolute;
         top: 0px;
         left: 130px;
-}
+    }
     .nombre p {
         font-size: 52px;
-}
+    }
     .menu li a {
         font-size: 16px;
 
-}
+    }
     .navbar{
         position: absolute;
         left: 25px;
         top: 80px;
-}
+    }
     .icons {
         display: none;
-}
+    }
     .contenedor-icon {
         position: absolute;
         top: 85px;
         right: 35px;
-}
+    }
     .icons-30px {
         display: flex;
         flex-direction: row;
         gap: 16px;
-}
+    }
     .wtsp {
         display: none;
 
-}
+    }
     .prendas {
         display: grid;
         grid-template-rows: repeat(2,1fr);
@@ -701,90 +715,122 @@ padding-left: 30px;
         "item-3 item-4"
         "item-5 ..";
         gap: 30px;
-}
+    }
     .item-1 {
         grid-area: item-1;
-}
+    }
     .item-2 {
         grid-area: item-2;
-}
+    }
     .item-3 {
         grid-area: item-3;
-}
+    }
     .item-4 {
         grid-area: item-4;
-}
+    }
     .item-5 {
         grid-area: item-5;
-}
+    }
     .prendas {
         position: relative;
         top: 7rem;
-}
+    }
     .con-nos li a {
         font-size:16px ; 
-}
+    }
     .logo-ubic-30 p {
         font-size: 16px;
-}
+    }
     .logo-ubic {
         display: none;
-}
+    }
     .logo-ubic-30{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}
+    }
     .face-inst {
         display: none;
-}
+    }
     .face-inst30 { 
         display: inline;
         position: absolute;
         right:40px;
-}
+    }
     .logo-face30 {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    }
+   
+    
+    /********************************tienda******************************/
+    .descripcion h2, h3, p {
+    font-size: 16px;
+    line-height: 25px;
+    }
+    .seleccion {
+        display: none;
+    }
+    .descripcion {
+        position: absolute;
+        top: 500px;
+        left: 40px;
+    }
+    .descripcion p {
+        line-height: 16px;
+    }
+    .contenedor200px {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+    }
+    .descripcion {
+        position: absolute;
+        top: 550px;
+        left: 40px;
+    }
+    .descripcion p {
+        line-height: 16px;
+    }
 }
-}
 
 
 
 
-@media (max-width:341px) and (min-width:320px) {
+
+
+@media (min-width:320px) and (max-width:341px) {
     .nombre {
         position: absolute;
         top: 0px;
         left: 100px;
-}
+    }
     .nombre p {
         font-size: 52px;
-}
+    }
     .menu li a {
         font-size: 16px;
-
-}
+    }
     .navbar {
         position: absolute;
         left: 10px;
         top: 90px;
-}
+    }
     .icons {
         display: none;
-}
+    }
     .contenedor-icon {
         position: absolute;
         top: 85px;
         right:15px;
-}
+    }
     .icons-30px {
         display: flex;
         flex-direction: row;
         gap: 16px;
-}    
+    }    
     .prendas {
         display: grid;
         grid-template-rows: repeat(2,1fr);
@@ -793,101 +839,90 @@ padding-left: 30px;
         "item-3 item-4"
         "item-5 ..";
         gap: 30px;
-}
+    }
     .item-1 {
         grid-area: item-1;
-}
+    }
     .item-2 {
         grid-area: item-2;
-}
+    }
     .item-3 {
         grid-area: item-3;
-}
+    }
     .item-4 {
         grid-area: item-4;
     }
     .item-5 {
         grid-area: item-5;
-}
+    }
     .prendas {
         position: relative;
         top: 7rem;
-}
+    }
     .con-nos li a {
         font-size: 16px; 
-}
+    }
     .logo-ubic-30 p {
         font-size: 16px;
-}
+    }
     .logo-ubic {
         display: none;
-}
+    }
     .logo-ubic-30 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-}
+    }
     .face-inst {
         display: none;
-}
+    }
     .logo-face30 {
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
+    }
 
     .wtsp {
         display: none;
-}
+    }
     .con-nos a {
         font-size: 16px;
     }
-    .logo-ubic-30{
+    .logo-ubic-30 {
         position: absolute;
         left:120px  ;
-}
+    }
     .face-inst30 { 
     display: inline;
     position: absolute;
     right:40px;
-}
+    }
     .logo-face30 {
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
-
-
-
-
-
-
-
-
-
-
+    }
+    /***********************tienda********************************************/
 
     .seleccion {
         display: none;
-}
-    .agregar, .desc, .env {
-        display: none;
-}
+    }
+   
     .contenedor200px {
         position: absolute;
         top:20px;
         right: 65px;
-}   
+    }   
     .reme200 {
         display: block;
-}
+    }
     .descripcion {
         position: absolute;
         top: 550px;
         left: 40px;
-}
+    }
     .descripcion p {
         line-height: 16px;
-}
+    }
 }
